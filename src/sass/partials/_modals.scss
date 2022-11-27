@@ -1,0 +1,51 @@
+.modal-content {
+    background-color: getColour(textColourPrimary);
+    color: getColour(textColourSecondary);
+    border-radius: 5px;
+    padding-bottom: 2rem;
+
+    label {
+        font-family: $font-heading;
+        font-size: 1.3rem;
+    }
+
+    .modal-header {
+        margin: 0 auto;
+        border-bottom: none;
+    }
+
+    .modal-body,
+    .modal-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-text {
+        color: getColour(textColourSecondary);
+    }
+}
+
+.logoutModal {
+    .logoutModal__btnContainer {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+.imageModal {
+    .modal-content {
+        padding-bottom: 0px;
+    }
+
+    .closeBtn {
+        position: absolute;
+        top: 1rem;
+        margin-left: auto;
+        right: 2.2rem;
+        color: getColour(textColourSecondary);
+        opacity: 1;
+        background: getColour(modalBackgroundColour);
+        font-size: 2rem;
+        border-radius: 0.2rem;
+    }
+}

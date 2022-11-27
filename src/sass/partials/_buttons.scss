@@ -1,0 +1,132 @@
+.primary__btn {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 3px;
+    font-weight: 700;
+    background: getColour(primaryColour);
+    color: getColour(textColourSecondary);
+    border: none;
+    transition: 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: getColour(btnPrimaryHoverColour);
+        box-shadow: 2px 2px 10px getColour(secondaryColour);
+    }
+}
+
+.secondary__btn {
+    background: getColour(inputColour);
+    color: getColour(textColourPrimary);
+    border: 1px solid getColour(textColourPrimary);
+
+    &:hover {
+        background-color: getColour(btnSecondaryHoverColour);
+        box-shadow: 2px 2px 10px getColour(secondaryColour);
+    }
+}
+
+.homepage__buttons {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.createPostBtn__container {
+    position: -webkit-sticky;
+    position: sticky;
+    margin-left: auto;
+    right: 2.2rem;
+    z-index: 10;
+    bottom: 70px;
+    left: 100px;
+    background-color: getColour(primaryColour);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .createPostBtn__icon {
+        font-size: 2.5rem;
+        color: getColour(textColourSecondary);
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: getColour(secondaryColour);
+    }
+}
+
+.edit__Btn {
+    max-width: 8rem;
+}
+
+.closeBtn {
+    position: relative;
+    top: 1rem;
+    margin-left: auto;
+    right: 2.2rem;
+    color: getColour(textColourSecondary);
+    opacity: 1;
+    background: getColour(modalBackgroundColour);
+    font-size: 2rem;
+
+    &:hover {
+        cursor: pointer;
+        color: getColour(primaryColour);
+    }
+}
+
+.follow__btn {
+    text-align: center;
+    padding-top: 0.2rem;
+    background-color: getColour(primaryColour);
+    color: getColour(textColourSecondary);
+    border: none;
+    padding: 0.1rem 0.2rem;
+
+    &:hover {
+        background-color: getColour(secondaryColour);
+        box-shadow: 2px 2px 10px getColour(primaryColour);
+    }
+}
+
+.unFollow__btn {
+    background-color: getColour(secondaryColour);
+
+    &:hover {
+        background-color: getColour(primaryColour);
+        box-shadow: 2px 2px 10px getColour(secondaryColour);
+    }
+
+    .following__checkMark {
+        font-size: 1.4rem;
+    }
+}
+
+.specificPost__interactBtn:hover {
+    cursor: pointer;
+}
+
+.moreLess__btnContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (min-width: 768px) {
+    .homepage__buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+    }
+
+    .createPostBtn__container {
+        right: 3rem;
+    }
+}

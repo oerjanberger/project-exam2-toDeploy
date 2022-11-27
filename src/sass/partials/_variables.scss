@@ -1,0 +1,27 @@
+$font-heading: 'Oswald', sans-serif;
+
+$font-primary: 'Roboto', sans-serif;
+
+$font-button: 'Raleway', sans-serif;
+
+$font-logo: lobster, sans-serif;
+
+$colours: (
+    primaryColour: #833D35,
+    secondaryColour: #3E807D,
+    backgroundColour: #D6D6D6,
+    navColour: #f5f5ffa0,
+    inputColour: #F5F5FF,
+    cardBackgroundColour: #F5F5FF,
+    shadowColour: #0000003f,
+    modalBackgroundColour: #262e2ee9,
+    textColourPrimary: #262E2E,
+    textColourSecondary: #F5F5FF,
+    btnPrimaryHoverColour: #803027,
+    btnSecondaryHoverColour: #fff0f0,
+    formErrorColour: #ff1900
+);
+
+@function getColour($colour) {
+    @return map-get($colours, $colour);
+}

@@ -1,0 +1,83 @@
+form {
+    max-width: 550px;
+    margin: 10px 20px 0px 20px;
+}
+
+.form__error {
+    margin-top: 0.3rem;
+    color: getColour(formErrorColour);
+    font-size: 0.9rem;
+}
+
+.form-control {
+    border-radius: 3px;
+    border: none;
+    background-color: getColour(inputColour);
+    color: getColour(textColourPrimary);
+    font-family: $font-primary;
+}
+
+.primary__input {
+    min-width: 20rem;
+}
+
+.form__background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: getColour(modalBackgroundColour);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8.3rem;
+
+    h1,
+    label {
+        color: getColour(textColourSecondary);
+    }
+
+    label {
+        font-family: $font-heading;
+        letter-spacing: 0.1rem;
+    }
+
+    .text-muted {
+        color: getColour(textColourSecondary) !important;
+    }
+}
+
+.form__btn {
+    width: 100%;
+    max-width: 35rem;
+}
+
+.form__createPost {
+    width: 35rem;
+
+    input,
+    textarea {
+        width: 100%;
+        max-width: 35rem;
+    }
+}
+
+.editPost__btnContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    .secondary__btn {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .primary__input {
+        width: 35rem;
+    }
+
+    .form__btn {
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+}

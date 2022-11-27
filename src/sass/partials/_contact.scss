@@ -1,0 +1,28 @@
+.contact__emailContainer {
+    display: flex;
+    gap: 1rem;
+
+    .contact__emailIcon {
+        font-size: 2rem;
+        color: getColour(primaryColour);
+    }
+
+    &:hover {
+        cursor: pointer;
+        color: getColour(secondaryColour);
+
+        .contact__emailIcon {
+            color: getColour(secondaryColour);
+        }
+    }
+}
+
+@media(min-width: 516px) {
+    .contact__emailContainer {
+        .contact__emailIcon {
+            font-size: 2.5rem;
+            align-self: center;
+        }
+
+    }
+}

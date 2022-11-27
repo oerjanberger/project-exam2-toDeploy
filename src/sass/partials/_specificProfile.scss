@@ -1,0 +1,51 @@
+.specificProfile__page {
+    margin-top: 2rem;
+}
+
+.specificProfile__profileContainer {
+    display: flex;
+
+    .specificPost__headingContainer {
+        @extend .specificProfile__profileContainer;
+        width: 70%;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin-left: 1rem;
+        align-self: flex-end;
+    }
+
+    .primary__btn {
+        max-width: 5rem;
+        align-self: flex-end;
+    }
+
+    .edit__Btn {
+        max-width: 8rem;
+    }
+}
+
+.posts__number {
+    margin-bottom: 0;
+    margin-left: 2rem;
+    margin-top: 0.6rem;
+    font-size: 1.4rem;
+}
+
+.specificPost__profileInfo__Container {
+    margin-top: 2rem;
+    display: flex;
+
+    .profileCard__postsContainer {
+        margin-left: 2rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .specificProfile__profileContainer {
+        .specificPost__headingContainer {
+            width: 90%;
+        }
+    }
+}

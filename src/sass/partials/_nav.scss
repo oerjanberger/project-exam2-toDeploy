@@ -1,0 +1,70 @@
+.navbar {
+    background: getColour(navColour);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .navLinks {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .avatar__img__border {
+        cursor: pointer;
+    }
+}
+
+.nav__icons__container {
+    width: 60vw;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+
+    .avatar__img__border:hover {
+        box-shadow: 3px 3px 3px getColour(secondaryColour);
+    }
+}
+
+.active {
+    color: getColour(primaryColour);
+}
+
+.activeAvatar {
+    box-shadow: 3px 3px 3px getColour(primaryColour);
+}
+
+.icon__logoutBtn:hover {
+    cursor: pointer;
+    color: getColour(secondaryColour);
+}
+
+.nav__icon {
+    font-size: 2rem;
+}
+
+.hover__container {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .hover__container {
+        display: block;
+        position: absolute;
+        top: 3.7rem;
+        width: 10rem;
+        height: 5rem;
+        margin-left: -4rem;
+        background-color: getColour(modalBackgroundColour);
+        border-radius: 5px;
+        color: getColour(textColourSecondary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            margin-bottom: 0px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.emoji__modal {
+    .modal-content {
+        height: 70vh;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2rem;
+        overflow: scroll;
+    }
+
+    .modal-body {
+        max-height: 60vh;
+    }
+
+    .emoji__container {
+        background-color: getColour(modalBackgroundColour);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.2rem;
+    }
+
+
+}
+
+.emoji__btn {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+}

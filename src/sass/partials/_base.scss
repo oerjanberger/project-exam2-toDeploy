@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: $font-primary;
+    background-color: getColour(backgroundColour);
+    position: relative;
+}
+
+.wrapper {
+    padding-bottom: 60px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.main__container {
+    width: 95%;
+    max-width: 900px;
+    margin-bottom: 10rem;
+    min-height: 100vh;
+}
+
+.posts__container,
+.profiles__container,
+.followingProfiles__container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.profiles__container {
+    padding: 0px;
+}
+
+.number {
+    font-family: $font-logo;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: getColour(primaryColour);
+}
+
+a {
+    color: getColour(textColourPrimary);
+    text-decoration: none;
+
+    &:hover {
+        color: getColour(secondaryColour);
+    }
+}
+
+h1 {
+    margin-top: 2rem;
+}

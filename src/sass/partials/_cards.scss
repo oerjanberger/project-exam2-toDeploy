@@ -1,0 +1,167 @@
+// Post card styles
+.postCard {
+    .card-img-top {
+        max-height: 50vh;
+        object-fit: cover;
+    }
+
+    .postCard__profileContainer {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .postCard__reactionsContainer,
+    .postCard__commentsContainer {
+        justify-content: space-between;
+    }
+
+    .postCard__dateContainer {
+        margin-top: 1rem;
+    }
+
+    .postCard__date {
+        font-size: 0.6rem;
+    }
+
+    .postCard__textContainer {
+        margin-bottom: 2rem;
+    }
+}
+
+.usersPost__headingContainer {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+//Profile card styles
+.profileCard {
+    max-height: 10rem;
+    min-width: 320px;
+
+    .profileCard__container,
+    .profileCard__profileInfo__Container {
+        display: flex;
+    }
+
+    .profileCard__profileInfo__Container {
+        margin-top: 1rem;
+    }
+
+    .profileCard__imgContainer {
+        max-width: 10rem;
+        min-width: 7rem;
+        max-height: 7rem;
+    }
+
+    .profileCard__banner {
+        position: absolute;
+        max-width: 7rem;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        box-shadow: 5px 0px 5px getColour(shadowColour);
+        color: transparent;
+    }
+
+    .profileCard__avatar__border {
+        position: relative;
+        top: 50%;
+        left: 30%;
+        box-shadow: 3px 3px 5px getColour(modalBackgroundColour);
+    }
+
+    .profileCard__postsContainer {
+        margin-left: 2rem;
+    }
+
+    .primary__btn {
+        max-width: 5rem;
+        height: 2rem;
+    }
+
+    .profileCard__followingBtn__container {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .profileCard__heading__container {
+        margin-top: 2rem;
+    }
+}
+
+//combined styles
+.postCard,
+.profileCard {
+    max-width: 100%;
+    border: none;
+    background-color: getColour(cardBackgroundColour);
+    box-shadow: 10px 10px 10px getColour(shadowColour);
+}
+
+.postCard__reactionsContainer,
+.postCard__commentsContainer,
+.profileCard__followersContainer,
+.profileCard__postsContainer {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.card-text {
+    margin-bottom: 0px;
+}
+
+.postCard__interactionContainer,
+.profileCard__heading__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reactionSymbols {
+    letter-spacing: 0.3rem;
+}
+
+
+//following cards
+.profileCard__following {
+    height: 10rem;
+
+    .profileCard__avatar__border {
+        position: relative;
+        top: 20px;
+        left: 20px;
+        box-shadow: 3px 3px 5px getColour(modalBackgroundColour);
+    }
+}
+
+@media (min-width: 768px) {
+    .postCard {
+        .postCard__dateContainer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .postCard__date {
+            font-size: 0.8rem;
+        }
+    }
+
+    .usersPost__headingContainer {
+        width: 100%;
+    }
+
+
+
+    .profileCard {
+        max-height: 7rem;
+
+        .profileCard__heading__container {
+            margin-top: 0px;
+        }
+
+        .profileCard__avatar__border {
+            top: 27%;
+        }
+    }
+}
