@@ -31,7 +31,7 @@ export default function GetAllPosts() {
             };
         };
         getPostData();
-    }, []);
+    }, []) // eslint-disable-next-line react-hooks/exhaustive-deps
 
 
     async function showMore(newOffset) {
