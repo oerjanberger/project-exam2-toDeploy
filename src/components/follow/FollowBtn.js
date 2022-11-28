@@ -14,7 +14,7 @@ export default function FollowBtn(props) {
 
         try {
             await http.put(followUserUrl);
-            navigate(0)
+
         } catch (error) {
             console.log(error);
             setError("There seems to be a problem with following this profile")
