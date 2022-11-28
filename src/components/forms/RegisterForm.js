@@ -9,7 +9,7 @@ import { BASE_URL } from "../../constants/Api";
 import FormError from "../common/FormError";
 import { Alert } from "react-bootstrap";
 
-let emailRegex = new RegExp("[a-z0-9]+@((stud.noroff|noroff)\.no)");
+let emailRegex = new RegExp("[a-z0-9]+@((stud.noroff|noroff).no)");
 
 const schema = yup.object().shape({
     name: yup.string().required("Please enter your username"),
