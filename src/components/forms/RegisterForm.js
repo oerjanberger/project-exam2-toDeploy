@@ -44,8 +44,8 @@ export default function RegisterForm() {
         <Form onSubmit={handleSubmit(onSubmit)}>
             {registerError && <FormError>{registerError}</FormError>}
             <Form.Group className="mb-3">
-                <Form.Label>Name</Form.Label>
-                <Form.Control {...register("name")} type="text" placeholder="Enter you name" className="primary__input" />
+                <Form.Label>username</Form.Label>
+                <Form.Control {...register("name")} type="text" placeholder="Enter you username" className="primary__input" />
                 <Form.Text className="text-muted">
                     Use _underscore to separate name, do not use .period
                 </Form.Text>
