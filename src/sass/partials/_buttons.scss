@@ -11,7 +11,7 @@
     &:hover {
         cursor: pointer;
         background-color: getColour(btnPrimaryHoverColour);
-        box-shadow: 2px 2px 10px getColour(secondaryColour);
+        box-shadow: 4px 4px 7px getColour(secondaryColour);
     }
 }
 
@@ -22,7 +22,7 @@
 
     &:hover {
         background-color: getColour(btnSecondaryHoverColour);
-        box-shadow: 2px 2px 10px getColour(secondaryColour);
+        box-shadow: 4px 4px 7px getColour(primaryColour);
     }
 }
 
