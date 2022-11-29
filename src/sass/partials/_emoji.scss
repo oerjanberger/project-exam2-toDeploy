@@ -29,3 +29,11 @@
     background-color: transparent;
     font-size: 2rem;
 }
+
+.reactBtn__emoji {
+    color: rgb(255, 191, 72);
+    background-color: getColour(textColourPrimary);
+    border-radius: 50%;
+    border: 1px solid getColour(textColourPrimary);
+    font-size: 1.6rem;
+}

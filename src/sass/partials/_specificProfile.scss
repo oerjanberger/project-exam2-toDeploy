@@ -14,11 +14,13 @@
     h1 {
         margin-left: 1rem;
         align-self: flex-end;
+        padding-top: 1rem;
     }
 
     .primary__btn {
         max-width: 5rem;
-        align-self: flex-end;
+        position: absolute;
+        right: 1rem;
     }
 
     .edit__Btn {
@@ -46,6 +48,11 @@
     .specificProfile__profileContainer {
         .specificPost__headingContainer {
             width: 90%;
+        }
+
+        .primary__btn {
+            position: relative;
+            align-self: flex-start;
         }
     }
 }
