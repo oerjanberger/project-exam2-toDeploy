@@ -8,7 +8,7 @@ export default function Following() {
     return (
         <>
             <Helmet>
-                <title>Your followers</title>
+                <title>The users followers</title>
                 <meta
                     name="description"
                     content="Here are all your profiles followers, you can always check their profiles out and follow them back"

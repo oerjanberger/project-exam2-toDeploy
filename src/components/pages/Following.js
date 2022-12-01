@@ -8,7 +8,7 @@ export default function Following() {
     return (
         <>
             <Helmet>
-                <title>Profiles you are following</title>
+                <title>Profiles the user is following</title>
                 <meta
                     name="description"
                     content="This is the profiles you are following. If you want to, this is where you manage them and can unfollow"

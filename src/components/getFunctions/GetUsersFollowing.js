@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import AuthContext from "../context/AuthContext";
 import { useParams } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Loading from "../loader/Loading";
@@ -11,11 +12,12 @@ export default function GetUsersFollowing() {
     const [loading, setLoading] = useState(true);
     const [following, setFollowing] = useState([]);
     const [error, setError] = useState(null);
+    const [auth] = useContext(AuthContext);
 
     const http = useAxios();
     let { name } = useParams();
     const profileUrl = `social/profiles/${name}?_following=true`;
-    const followingUrl = `social/profiles/${name}?_following=true`;
+    const followingUrl = `social/profiles/${auth.name}?_following=true`;
 
     useEffect(() => {
         async function getProfileData() {

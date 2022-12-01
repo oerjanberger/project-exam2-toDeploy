@@ -66,7 +66,7 @@ export default function GetUsersProfile() {
     return (
         <>
             <Helmet>
-                <title>This is you profile, {profile.name}</title>
+                <title>This is your profile, {profile.name}</title>
                 <meta
                     name="description"
                     content="Welcome to your profile, here you can edit your images and see your posts in chronological order"

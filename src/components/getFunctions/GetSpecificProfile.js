@@ -69,6 +69,7 @@ export default function GetSpecificProfile() {
 
     const bannerAltText = `This is the banner image for ${profile.banner}`;
     const avatarAltText = `This is the avatar image for ${profile.avatar}`;
+
     return (
         <>
             <Helmet>
@@ -96,7 +97,7 @@ export default function GetSpecificProfile() {
                         <p className="number">{!profile._count.followers ? 0 : profile._count.followers}</p>
                         <p>Followers</p>
                     </Link>
-                    <Link to={`/profiles/${name}/following`} className="profileCard__postsContainer">
+                    <Link to={`/profiles/${profile.name}/following`} className="profileCard__postsContainer">
                         <p className="number">{!profile._count.following ? 0 : profile._count.following}</p>
                         <p>Following</p>
                     </Link>
