@@ -63,7 +63,7 @@ export default function EditImages(props) {
                 {errors.avatar && <FormError>{errors.avatar.message}</FormError>}
                 <Form.Text>Must be a url directly to the image</Form.Text>
             </Form.Group>
-            <button className="primary__btn form__btn">Update Post</button>
+            <button className="primary__btn form__btn">Update Images</button>
         </Form>
     );
 };
