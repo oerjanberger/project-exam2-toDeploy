@@ -12,7 +12,7 @@ export default function LargeImage(props) {
             centered
             className="imageModal"
         >
-            <AiOutlineClose onClick={props.onHide} className="closeBtn" />
+            <AiOutlineClose onClick={props.onHide} className="closeBtn" onKeyDown={(e) => e.key === "Enter" ? props.onHide() : null} tabIndex="0" aria-label="close" />
             <img src={props.image} className="modal__largeImg" alt="" />
         </Modal>
     );

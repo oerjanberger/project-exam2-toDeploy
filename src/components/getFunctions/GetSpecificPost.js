@@ -67,7 +67,7 @@ export default function GetSpecificPost() {
             </Helmet>
             <Heading size="1" content={post.title} />
             <div className="specificPost__imgContainer">
-                <img src={post.media} className="specificPost__img" alt="" onClick={() => setImageModalShow(true)} />
+                <img src={post.media} className="specificPost__img" alt="" onClick={() => setImageModalShow(true)} onKeyDown={(e) => e.key === "Enter" ? setImageModalShow(true) : setImageModalShow(false)} tabIndex="1" />
             </div>
             <LargeImage
                 show={imageModalShow}
@@ -94,7 +94,7 @@ export default function GetSpecificPost() {
             </div>
             <hr></hr>
             <div className="specificPost__interactionBtnContainer">
-                <ReactionBtn id={post.id} onClick />
+                <ReactionBtn id={post.id} />
                 <CommentBtn />
             </div>
             <hr></hr>

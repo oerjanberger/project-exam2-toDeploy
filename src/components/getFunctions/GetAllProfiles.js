@@ -41,7 +41,7 @@ export default function GetAllProfiles() {
             };
         };
         getProfileData();
-    }, []);
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     async function showMore(newOffset) {
         let count = offset + newOffset;

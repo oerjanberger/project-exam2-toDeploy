@@ -12,7 +12,7 @@ export default function ConfirmLogout({ showModal, cancel, confirm }) {
             centered
             className="logoutModal"
         >
-            <AiOutlineClose onClick={cancel} className="closeBtn" />
+            <AiOutlineClose onClick={cancel} className="closeBtn" onKeyDown={(e) => e.key === "Enter" ? cancel() : null} tabIndex="0" aria-label="close" />
             <Modal.Header >
                 <Modal.Title >
                     Are you sure you want to log out?

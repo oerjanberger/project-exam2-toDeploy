@@ -69,7 +69,7 @@ export default function Navigation() {
                                         </div>
                                     )}</NavLink>
                                 <div className="nav__profileImg__container" onMouseEnter={() => setShowUserHover(true)}
-                                    onMouseLeave={() => setShowUserHover(false)} tabIndex='0'>
+                                    onMouseLeave={() => setShowUserHover(false)} onKeyDown={(e) => e.key === "Enter" ? setNewUserUrl() : null} tabIndex='0'>
                                     <div className="avatar__img__border" onClick={setNewUserUrl} >
                                         <img src={auth.avatar === null ? "/images/defaultImages/default_avatar_img.jpg" : auth.avatar} alt="my profile" className="nav__icon avatar__img__small" id="nav__avatar" />
                                     </div>
@@ -81,7 +81,7 @@ export default function Navigation() {
                                 </div>
                                 <div className="nav__logoutBtn__container">
                                     <RiLogoutBoxLine onClick={() => setModalShow(true)} onMouseEnter={() => setShowLogoutHover(true)}
-                                        onMouseLeave={() => setShowLogoutHover(false)} className="nav__icon icon__logoutBtn" aria-label="logout" tabIndex='0' />
+                                        onMouseLeave={() => setShowLogoutHover(false)} className="nav__icon icon__logoutBtn" onKeyDown={(e) => e.key === "Enter" ? setModalShow(true) : setModalShow(false)} aria-label="logout" tabIndex='0' />
                                     {showLogoutHover && (
                                         <div className="hover__container">
                                             <p>Log out</p>

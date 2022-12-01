@@ -78,12 +78,12 @@ export default function GetSpecificProfile() {
                     content="This is the profile of"{...profile.name}
                 />;
             </Helmet>
-            <div className="specificPost__bannerContainer" onClick={() => setBannerModalShow(true)}>
+            <div className="specificPost__bannerContainer" onClick={() => setBannerModalShow(true)} onKeyDown={(e) => e.key === "Enter" ? setBannerModalShow(true) : setBannerModalShow(false)} tabIndex="1">
                 <img src={profile.banner === null ? "/images/defaultImages/default_banner_img.jpg" : profile.banner} className="specificProfile__bannerImg" alt={bannerAltText} />
             </div>
             <Container className="main__container specificProfile__page">
                 <div className="specificProfile__profileContainer">
-                    <div className="avatar__img__border profileCard__avatar__border specificProfile__avatar__border" onClick={() => setAvatarModalShow(true)}>
+                    <div className="avatar__img__border profileCard__avatar__border specificProfile__avatar__border" onClick={() => setAvatarModalShow(true)} onKeyDown={(e) => e.key === "Enter" ? setAvatarModalShow(true) : setAvatarModalShow(false)} tabIndex="1">
                         <img src={profile.avatar === null ? "/images/defaultImages/default_avatar_img.jpg" : profile.avatar} className="nav__icon avatar__img__small specificProfile__avatar__img" alt={avatarAltText} />
                     </div>
                     <div className="specificPost__headingContainer">

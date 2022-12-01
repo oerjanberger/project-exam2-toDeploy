@@ -5,6 +5,7 @@ import UnfollowBtn from "./UnFollowBtn";
 export default function CheckIfFollowing(props) {
     const [following, setFollowing] = useState(false);
 
+
     const followingNames = props.followingNames;
     const profileName = props.profileName;
 

@@ -11,7 +11,7 @@ export default function EditImagesModal(props) {
             aria-labelledby="Edit images"
             centered
         >
-            <AiOutlineClose onClick={props.onHide} className="closeBtn" />
+            <AiOutlineClose onClick={props.onHide} className="closeBtn" onKeyDown={(e) => e.key === "Enter" ? props.onHide() : null} tabIndex="0" aria-label="close" />
             <Modal.Header>
                 <Modal.Title>
                     Edit images

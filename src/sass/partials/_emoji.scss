@@ -21,7 +21,11 @@
         gap: 0.2rem;
     }
 
-
+    .closeBtn {
+        position: absolute;
+        top: 0rem;
+        right: 0;
+    }
 }
 
 .emoji__btn {

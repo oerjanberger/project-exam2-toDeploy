@@ -4,9 +4,15 @@ import { BiComment } from "react-icons/bi";
 export default class CommentBtn extends Component {
     componentDidMount() {
         const commentBtn = document.querySelector(".comment__btn");
-        const commentInput = document.querySelector("#comment__input")
+        const commentInput = document.querySelector("#comment__input");
         commentBtn.addEventListener("click", () => {
-            commentInput.focus()
+            commentInput.focus();
+        });
+
+        commentBtn.addEventListener("onKeyDown", (e) => {
+            if (e.key === "Enter") {
+                commentInput.focus();
+            }
         });
     };
     render() {

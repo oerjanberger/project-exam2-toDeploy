@@ -114,4 +114,5 @@ I am happy with the look and feel of the page. I feel I have completed the assig
 [Fonts](https://fonts.google.com/)
 [NPM package for Emojis](https://www.npmjs.com/package/unicode-emoji)
 [Mail to solution](https://stackoverflow.com/questions/63782544/react-open-mailto-e-mail-client-onclick-with-body-from-textarea)
+[onkeydown to solution](https://reactgo.com/react-trigger-button-click/)
 

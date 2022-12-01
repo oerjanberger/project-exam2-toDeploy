@@ -7,10 +7,10 @@ export default function ReactionBtn() {
 
     return (
         <>
-            <div className="specificPost__interactBtn" onClick={() => setShowEmojis(true)} >
-                <img src="/images/logo//logo_main.png" alt="react logo, react to the post" className="logo__btn" />
+            <button className="specificPost__interactBtn" onClick={() => setShowEmojis(true)} onKeyDown={(e) => e.key === "Enter" ? setShowEmojis(true) : setShowEmojis(false)}>
+                <img src="/images/logo//logo_main.png" alt="react to the post" className="logo__btn" />
                 <BsFillEmojiSmileFill className="reactBtn__emoji" />
-            </div>
+            </button>
             <EmojiModal
                 show={showEmojis}
                 onHide={() => setShowEmojis(false)}
