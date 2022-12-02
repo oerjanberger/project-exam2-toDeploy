@@ -7,6 +7,7 @@ import Alert from "react-bootstrap/Alert";
 import useAxios from "../hooks/useAxios";
 import FollowingProfileCard from "../layout/FollowingProfileCard";
 
+// gets the profiles a chosen user is following
 export default function GetUsersFollowing() {
     const [profiles, setProfiles] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -21,6 +22,7 @@ export default function GetUsersFollowing() {
 
     useEffect(() => {
         async function getProfileData() {
+            // added because of experience position of viewport was not at the when entering a page. Possibly because of an issue with the footer
             window.scrollTo({
                 top: 0,
                 behavior: "smooth",

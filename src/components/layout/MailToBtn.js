@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { MdEmail } from "react-icons/md";
 import Heading from "../layout/Heading";
 
+// when clicked open a users email and add the mail address in the mailto field
 const MailToBtn = ({ mailto }) => {
     return (
         <Link to="#" onClick={(e) => {

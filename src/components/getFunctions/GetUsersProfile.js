@@ -14,6 +14,7 @@ import CreatePostBtn from "../layout/CreatePostBtn";
 import { Link } from "react-router-dom";
 import LargeImage from "../modals/LargeImage";
 
+// gets logged in users profile
 export default function GetUsersProfile() {
     const [profile, setProfile] = useState([]);
     const [posts, setPosts] = useState([]);
@@ -34,6 +35,7 @@ export default function GetUsersProfile() {
 
     useEffect(() => {
         async function getUsersProfileData() {
+            // added because of experience position of viewport was not at the when entering a page. Possibly because of an issue with the footer
             window.scrollTo({
                 top: 0,
                 behavior: "smooth",

@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Heading from "../layout/Heading";
 
 export default function About() {
+    // added because of experience position of viewport was not at the when entering a page. Possibly because of an issue with the footer
     window.scrollTo({
         top: 0,
         behavior: "smooth",

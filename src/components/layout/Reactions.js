@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 import useAxios from "../hooks/useAxios";
 
+// shows the reactions that is on a post and allows a user to click these emojis and add to the count
 export default function Reactions({ symbol, count, id }) {
     const navigate = useNavigate();
 

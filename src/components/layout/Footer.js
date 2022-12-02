@@ -2,6 +2,7 @@ import { useContext } from "react";
 import AuthContext from "../context/AuthContext";
 import { Link } from "react-router-dom";
 
+// footer where the logo link is different based on if there is a logged in user or not.
 export default function Footer() {
     const [auth] = useContext(AuthContext);
     return (

@@ -14,6 +14,7 @@ const schema = yup.object().shape({
     body: yup.string().required("Did you forget to write something?"),
 });
 
+// form to create a comment on a post
 export default function CreateComment() {
     const [commentError, setCommentError] = useState(null);
     const navigate = useNavigate();

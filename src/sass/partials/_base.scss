@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: $font-primary;
     background-color: getColour(backgroundColour);
@@ -24,6 +23,14 @@ body {
     min-height: 100vh;
 }
 
+.pre__auth__container {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
 .posts__container,
 .profiles__container,
 .followingProfiles__container {
@@ -43,6 +50,10 @@ body {
     font-style: normal;
     font-size: 1.2rem;
     color: getColour(primaryColour);
+}
+
+.alert {
+    text-align: center;
 }
 
 a {

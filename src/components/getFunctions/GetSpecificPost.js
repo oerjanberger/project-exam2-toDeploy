@@ -15,6 +15,7 @@ import LargeImage from "../modals/LargeImage";
 import DisplayReactions from "../layout/DisplayReactions";
 import ReactionBtn from "../layout/ReactionBtn";
 
+// gets the specific post based on the id from the params
 export default function GetSpecificPost() {
     const [post, setPost] = useState([]);
     const [comments, setComments] = useState([]);
@@ -29,6 +30,7 @@ export default function GetSpecificPost() {
 
     useEffect(() => {
         async function getSpecificPostData() {
+            // added because of experience position of viewport was not at the when entering a page. Possibly because of an issue with the footer
             window.scrollTo({
                 top: 0,
                 behavior: "smooth",

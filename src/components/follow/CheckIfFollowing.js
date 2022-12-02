@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import FollowBtn from "./FollowBtn";
 import UnfollowBtn from "./UnFollowBtn";
 
+// checks if the user is following the profiles and displays the correct button based on this status
 export default function CheckIfFollowing(props) {
     const [following, setFollowing] = useState(false);
 

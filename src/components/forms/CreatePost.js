@@ -13,6 +13,7 @@ const schema = yup.object().shape({
     title: yup.string().required("Please add a title to your post"),
 });
 
+//Form for a logged in user to create a post
 export default function CreatePost() {
     const [createError, setCreateError] = useState(null);
     const navigate = useNavigate();
@@ -39,7 +40,6 @@ export default function CreatePost() {
             setCreateError("We were unable to create your post, please try again later");
         };
     };
-
 
     return (
         <Form onSubmit={handleSubmit(onSubmit)} className="form__createPost">

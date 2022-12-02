@@ -20,6 +20,7 @@ export default function GetAllProfiles() {
 
     const http = useAxios();
 
+    // gets all profiles and a logged in users following data to be able to set the data to checkFollowing function
     useEffect(() => {
         async function getProfileData() {
             try {
@@ -41,11 +42,13 @@ export default function GetAllProfiles() {
             };
         };
         getProfileData();
-    }, []) // eslint-disable-line react-hooks/exhaustive-deps
+    }, [])
 
+    // shows the 100 next profiles
     async function showMore(newOffset) {
         let count = offset + newOffset;
         setOffset(count);
+        // scrolls to top after button is clicked to show new profiles
         window.scrollTo({
             top: 0,
             behavior: "smooth",
@@ -75,9 +78,11 @@ export default function GetAllProfiles() {
         };
     };
 
+    // shows the 100 previous profiles
     async function showLess(newOffset) {
         let count = offset - newOffset
         setOffset(count);
+        // scrolls to top after button is clicked to show previous profiles
         window.scrollTo({
             top: 0,
             behavior: "smooth",

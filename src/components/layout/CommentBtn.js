@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { BiComment } from "react-icons/bi";
 
+// if component did mount add a click and enter event listener to set focus to the input of the comment form
 export default class CommentBtn extends Component {
     componentDidMount() {
         const commentBtn = document.querySelector(".comment__btn");

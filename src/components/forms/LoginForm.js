@@ -14,6 +14,7 @@ const schema = yup.object().shape({
     password: yup.string().trim().required("Please enter your password"),
 });
 
+// form for a registered user to be able to login
 export default function LoginForm() {
     const [loginError, setLoginError] = useState(null);
 

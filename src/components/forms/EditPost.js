@@ -13,6 +13,7 @@ const schema = yup.object().shape({
     title: yup.string().required("Please add a title to your post"),
 });
 
+// form for a logged in user to be able to edit an existing post or delete the post
 export default function EditPost(props) {
     const [editError, setEditError] = useState(null);
     const [postTitle, setPostTitle] = useState(props.title);

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Reactions from "./Reactions";
 
+// displays the reactions that is on a post. If no reactions show zero reactions, if reactions show emojis and count
 export default function DisplayReactions(props) {
     const [showReactions, setShowReactions] = useState([]);
 

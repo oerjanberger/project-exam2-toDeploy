@@ -6,6 +6,8 @@ import Heading from "../layout/Heading";
 import { MdEdit } from "react-icons/md";
 import EditPostModal from "../modals/EditPostModal";
 import DisplayReactions from "./DisplayReactions";
+
+// the card for post that a logged in users has. This has a edit button
 export default function UsersPostCard({ id, avatar, name, title, created, updated, image, body, reactions, comments }) {
     const avatarAltText = "This is the avatar image of " + name;
     const [modalShow, setModalShow] = useState(false);

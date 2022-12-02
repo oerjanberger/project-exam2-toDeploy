@@ -3,6 +3,8 @@ import Card from 'react-bootstrap/Card';
 import { Link } from "react-router-dom";
 import Heading from "../layout/Heading";
 import DisplayReactions from "../layout/DisplayReactions";
+
+// This is the card for a users post.
 export default function PostCard({ id, avatar, name, title, created, updated, image, body, reactions, comments }) {
     const avatarAltText = "This is the avatar image of " + name;
 

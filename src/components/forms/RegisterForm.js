@@ -17,6 +17,7 @@ const schema = yup.object().shape({
     password: yup.string().trim().required("Please enter your password").min(8, "Password must be at least 8 characters"),
 });
 
+// form for a new user to be able to register themselves with a valid noroff email
 export default function RegisterForm() {
     const [registerError, setRegisterError] = useState(null);
     const navigate = useNavigate();

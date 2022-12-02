@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 
+// sets the background image of the three pages home, register and login. 
 export default function PreAuthBackground({ image }) {
     const newImage = image
     return (

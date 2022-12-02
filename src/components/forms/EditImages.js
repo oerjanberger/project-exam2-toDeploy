@@ -15,6 +15,7 @@ const schema = yup.object().shape({
     avatar: yup.string().url("Please add valid url as the avatar image"),
 });
 
+// Form to edit avatar and banner image of user. A default url or current image url is set as a value for both avatar and banner input so the post request from the form does not delete either.
 export default function EditImages(props) {
     const [editImagesError, setEditImagesError] = useState(null);
     const [avatar, setAvatar] = useState(props.avatar);
@@ -46,7 +47,6 @@ export default function EditImages(props) {
             setEditImagesError("We were unable to edit your images, please try again later");
         };
     };
-
 
     return (
         <Form onSubmit={handleSubmit(onSubmit)} className="form__editPost">

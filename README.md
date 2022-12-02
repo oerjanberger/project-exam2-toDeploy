@@ -116,5 +116,10 @@ I am happy with the look and feel of the page. I feel I have completed the assig
 [NPM package for Emojis](https://www.npmjs.com/package/unicode-emoji)
 [Mail to solution](https://stackoverflow.com/questions/63782544/react-open-mailto-e-mail-client-onclick-with-body-from-textarea)
 [onkeydown to solution](https://reactgo.com/react-trigger-button-click/)
+[useLocalStorage hook](https://usehooks.com/useLocalStorage/)
+[react bootstrap](https://react-bootstrap.github.io/)
+[react hook form](https://react-hook-form.com/)
+[yup validation](https://github.com/jquense/yup)
+[axios](https://github.com/axios/axios)
 
 

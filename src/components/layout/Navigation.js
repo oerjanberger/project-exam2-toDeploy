@@ -9,6 +9,7 @@ import { RiLogoutBoxLine } from "react-icons/ri";
 import { FaUsers } from "react-icons/fa";
 import ConfirmLogout from "../modals/ConfirmLogout";
 
+// allows a new user and a logged in user to see different nav options
 export default function Navigation() {
     const [auth, setAuth] = useContext(AuthContext);
     const [modalShow, setModalShow] = useState(false);
@@ -18,13 +19,14 @@ export default function Navigation() {
     const [showLogoutHover, setShowLogoutHover] = useState(false);
     const navigate = useNavigate();
 
+    // when user avatar is clicked navigates to userprofile
     function setNewUserUrl() {
         if (auth !== null) {
             navigate("userProfile/" + auth.name, { replace: true });
             setAvatarActive();
         };
     };
-
+    // sets the avatar border to active class so it has the correct shadow colour
     function setAvatarActive() {
         const avatarBorder = document.querySelector(".avatar__img__border");
         const { pathname } = document.location;
@@ -36,12 +38,14 @@ export default function Navigation() {
         };
     };
 
+    // logs out the user
     function logout() {
         setModalShow(false)
         setAuth(null);
         navigate("/", { replace: true });
     };
 
+    // cancels logout and closes logout modal
     function cancelLogout() {
         setModalShow(false);
     };

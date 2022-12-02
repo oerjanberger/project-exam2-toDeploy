@@ -32,6 +32,7 @@ export default function GetSpecificProfile() {
 
     useEffect(() => {
         async function getSpecificProfileData() {
+            // added because of experience position of viewport was not at the when entering a page. Possibly because of an issue with the footer
             window.scrollTo({
                 top: 0,
                 behavior: "smooth",

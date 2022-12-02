@@ -4,6 +4,7 @@ import Heading from "../layout/Heading";
 import MailToBtn from "../layout/MailToBtn";
 
 export default function Contact() {
+    // added because of experience position of viewport was not at the when entering a page. Possibly because of an issue with the footer
     window.scrollTo({
         top: 0,
         behavior: "smooth",

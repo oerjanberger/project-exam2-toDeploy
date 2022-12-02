@@ -3,9 +3,11 @@ import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
 import useAxios from "../hooks/useAxios";
 
+// shows emojis in the emoji modal. Adds Emojis to Post id. 
 export default function ShowAllEmojis() {
     const [emojis, setEmojis] = useState([]);
     useEffect(() => {
+        // categories with emojis that is removed is in the category object
         const omitWhere = { versionAbove: '12.0', category: ['flags', 'symbols', 'travel-places', 'animals-nature'] };
         const allEmojis = unicodeEmoji.getEmojis(omitWhere);
         setEmojis(allEmojis)

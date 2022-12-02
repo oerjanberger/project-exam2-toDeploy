@@ -2,6 +2,7 @@ import { useState } from "react";
 import EmojiModal from "../modals/EmojiModal";
 import { BsFillEmojiSmileFill } from "react-icons/bs";
 
+// opens the emoji modal 
 export default function ReactionBtn() {
     const [showEmojis, setShowEmojis] = useState(false);
 

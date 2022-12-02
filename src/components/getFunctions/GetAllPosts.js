@@ -18,6 +18,7 @@ export default function GetAllPosts() {
 
     const http = useAxios();
 
+    // gets all posts 
     useEffect(() => {
         async function getPostData() {
             try {
@@ -33,10 +34,11 @@ export default function GetAllPosts() {
         getPostData();
     }, []);
 
-
+    // shows the 100 next posts
     async function showMore(newOffset) {
         let count = offset + newOffset;
         setOffset(count);
+        // scrolls to top after button is clicked to show new posts
         window.scrollTo({
             top: 0,
             behavior: "smooth",
@@ -58,9 +60,11 @@ export default function GetAllPosts() {
         };
     };
 
+    // shows the 100 previous posts
     async function showLess(newOffset) {
         let count = offset - newOffset;
         setOffset(count);
+        // scrolls to top after button is clicked to show previous posts
         window.scrollTo({
             top: 0,
             behavior: "smooth",
